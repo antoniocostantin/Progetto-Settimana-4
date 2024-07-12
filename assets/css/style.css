@@ -1,7 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -17,8 +97,8 @@ body {
 
 header {
     background-color: #ffc017;
-    border-bottom: 1px solid #e0e0e0; 
-    padding:  20px; 
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid;
@@ -35,26 +115,26 @@ header>div {
 }
 
 .logo img {
-    height: 40px; 
+    height: 40px;
 }
 
-nav{
+nav {
     display: flex;
     align-self: flex-end;
 }
 
 nav a {
     background-color: #ffc017;
-    text-decoration: none; 
+    text-decoration: none;
     color: black;
     border: none;
     border-radius: 20px;
-    padding: 10px 15px; 
-    cursor: pointer; 
-    font-size: 16px; 
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-header button{
+header button {
     border-radius: 25px;
     padding: 0 15px;
     background-color: black;
@@ -62,7 +142,7 @@ header button{
     border: none;
 }
 
-.staycurious{
+.staycurious {
     padding-top: 80px;
     background-color: #ffc017;
     display: flex;
@@ -71,91 +151,227 @@ header button{
     border-bottom: 1px solid;
 }
 
-.staycurious svg{
+.staycurious svg {
     width: 100%;
     height: fit-content;
     object-fit: cover;
 }
 
-.stayctxt{
+.stayctxt {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     margin-left: 5vw;
+    gap: 3em;
 }
 
-.stayctxt h2{
-    font-size: 3em;
+.stayctxt div {
+    font-size: large;
+}
+
+.stayctxt h2 {
+    font-size: 5em;
+    font-family: "Spectral", serif;
+    width: max-content;
+    font-weight: initial;
+}
+
+.stayctxt button {
+    padding: 7px 60px;
+    font-size: large;
+    border: none;
+    background-color: black;
+    color: white;
     width: fit-content;
-    font-family: "Spectral", serif; 
-    width: max-content; 
+    border-radius: 20px;
+    margin-bottom: 1.2em;
 }
 
-.stayctxt button{
-    padding: 10px 18px;
-  border: none;
-  background-color: black;
-  color: antiquewhite;
-  width: fit-content;
-  border-radius: 20px;
+.contmain {
+    border-bottom: 1px solid #e7e7e7;
+
 }
 
-.infomain{
+.infomain {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 40px;
+    justify-content: space-between;
 }
 
-main>h4{
-    margin: 2em 0;
+main>h4 {
+    margin-top: 2.2em;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    font-weight: 650;
+    font-size: small;
 }
 
-main>h4>img{
+
+main>h4>img {
     object-fit: contain;
 }
 
-main{
-    width: 85%;
+main {
+    width: 80%;
     margin: 0 auto;
     height: auto;
+    font-size: xx-small;
+    margin-bottom: 2.2em;
+    color: #191919;
+
 }
 
-article{
+article {
     display: flex;
     width: 30%;
-    gap: 10px;
+    gap: 15px;
+    margin-bottom: 1.5em;
 }
 
-.round,.circle{
+.round,
+.circle {
     width: 20px;
 }
 
-.round{
+.round {
     border-radius: 5px;
 }
 
-.circle{
+.circle {
     border-radius: 50%;
 }
 
-.num{
+.num {
     color: #e7e7e7;
     font-size: 25px;
     font-weight: bold;
+    position: relative;
+    top: -5px;
 }
 
-.info{
-    font-size: xx-small;
-    line-height: 3em;
+.info {
+    line-height: 2.2em;
 }
 
-.name{
+.name {
     font-weight: normal;
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    margin-bottom: 0.3em;
+}
+
+.in {
+    color: #757575;
+}
+
+.date {
+    color: #757575;
     display: flex;
     align-items: center;
 }
 
-.in{
-    color: #e7e7e7;
+.date img {
+    width: 15px;
+}
+
+.pippo {
+    display: flex;
+    gap: 4em;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2.2em;
+
+}
+
+.newspapers {}
+
+.newspaper {
+    margin-bottom: 2.25em;
+    margin-left: 1.5em;
+    display: flex;
+    line-height: 1;
+}
+
+.namenews {
+    font-weight: bold;
+    font-size: xx-small;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1em;
+}
+
+.namenews img {
+    width: 20px;
+}
+
+.titnews {
+    font-size: initial;
+    margin-bottom: 0.3em;
+}
+
+.content {
+    color: #757575;
+    font-size: small;
+    font-weight: initial;
+    margin-bottom: 0.7em;
+}
+
+.datenews{
+    color: #757575;
+    font-size: small;
+}
+
+.datenews span{
+    padding: 1.5px 9px;
+    background-color: #e7e7e7;
+    color: #757575;
+    border-radius: 10px;
+}
+
+.newws {
+    flex-grow: 8;
+    position: relative;
+}
+
+.newws+div>img {
+    width: 165px;
+}
+
+.bookmark{
+    position: absolute;
+    right: 12px;
+    bottom: 7px;
+    opacity: 0.7;
+}
+
+aside{
+    width: 50%;
+    font-size: smaller;
+}
+
+aside ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 1.5em 0;
+}
+
+.button li {
+    padding: 5px 8px;
+    border: 1px solid #e7e7e7;
+    color: #757575;
+}
+
+.button{
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.link li a{
+    color: #757575;
+    text-decoration: none;
 }
