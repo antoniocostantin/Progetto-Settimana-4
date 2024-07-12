@@ -293,6 +293,7 @@ article {
     margin-left: 1.5em;
     display: flex;
     line-height: 1;
+    gap: 1em;
 }
 
 .namenews {
@@ -403,13 +404,13 @@ aside ul li {
 
     aside {
         width: 90%;
-        text-align: center;
-        font-size: small;
+        font-weight: bold;
+        font-size: x-small;
         margin: 0 auto;
     }
 
     .link {
-        justify-content: center
+        padding-bottom: 1em
     }
 
     article {
@@ -417,8 +418,41 @@ aside ul li {
         margin-bottom: 2.5em;
     }
 
-    .stayctxt h2{
+
+    .stayctxt h2 {
         font-size: 3.5em;
     }
 
+    .bookmark {
+        right: 15px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .svgimg,
+    .none {
+        display: none;
+    }
+
+    nav button {
+        margin-right: 1em;
+    }
+
+    .staycurious {
+        display: inline-block;
+        width: 100%;
+    }
+
+    article {
+        width: 95%;
+    }
+
+    .datenews {
+        width: 85%;
+    }
+
+    .newws+div>img {
+        width: 150px;
+    }
 }
