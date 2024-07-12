@@ -143,7 +143,7 @@ header button {
 }
 
 .staycurious {
-    padding-top: 80px;
+    padding-top: 100px;
     background-color: #ffc017;
     display: flex;
     flex-direction: row;
@@ -320,12 +320,19 @@ article {
     margin-bottom: 0.7em;
 }
 
-.datenews{
+.datenews {
     color: #757575;
     font-size: small;
+    display: flex;
+    margin-top: 1em;
 }
 
-.datenews span{
+
+.datenews img {
+    margin-left: 5px;
+}
+
+.datenews span {
     padding: 1.5px 9px;
     background-color: #e7e7e7;
     color: #757575;
@@ -341,16 +348,16 @@ article {
     width: 165px;
 }
 
-.bookmark{
+.bookmark {
     position: absolute;
     right: 12px;
     bottom: 7px;
     opacity: 0.7;
 }
 
-aside{
-    width: 50%;
-    font-size: smaller;
+aside {
+    width: 45%;
+    font-size: xx-small;
 }
 
 aside ul {
@@ -358,20 +365,60 @@ aside ul {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    padding: 1.5em 0;
+    padding: 1.8em 0;
+
+}
+
+aside ul li {
+    font-size: smaller;
 }
 
 .button li {
-    padding: 5px 8px;
+    padding: 8px 13px;
     border: 1px solid #e7e7e7;
+    border-radius: 2px;
     color: #757575;
 }
 
-.button{
+.button {
     border-bottom: 1px solid #e7e7e7;
 }
 
-.link li a{
+.link li a {
     color: #757575;
     text-decoration: none;
+}
+
+@media screen and (max-width: 850px) {
+
+    main {
+        width: 90%;
+    }
+
+    .pippo {
+        width: 90%;
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+    aside {
+        width: 90%;
+        text-align: center;
+        font-size: small;
+        margin: 0 auto;
+    }
+
+    .link {
+        justify-content: center
+    }
+
+    article {
+        width: 48%;
+        margin-bottom: 2.5em;
+    }
+
+    .stayctxt h2{
+        font-size: 3.5em;
+    }
+
 }
