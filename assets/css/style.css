@@ -361,6 +361,11 @@ aside {
     font-size: xx-small;
 }
 
+aside>div{
+    position: sticky;
+    top: 100px;
+}
+
 aside ul {
     list-style-type: none;
     display: flex;
